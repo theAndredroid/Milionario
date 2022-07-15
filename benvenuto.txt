@@ -1,0 +1,10 @@
+BENVENUTO!
+Questo è il gioco del MILIONARIO!
+La versione è stata sviluppata da Contarin Davide e Tomita Andrei.
+Affronterai 15 domande di cultura generale e di diversa difficoltà.
+Ad ogni risposta corretta avanzerai di livello e il tuo montepremi aumenterà.
+Seleziona le risposte premendo i tasti "A", "B", "C", "D".
+Se hai un dubbio puoi premere una sola volta il tasto "5".
+In questo modo utilizzerai il 50/50 e dimezzerai le risposte.
+(Premi un tasto per iniziare)
+BUON DIVERTIMENTO!
