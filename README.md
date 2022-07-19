@@ -51,14 +51,15 @@ La prima riga di ogni file indica il numero di domande presenti nel file. Le rig
 
 Paccheti neccessari:
 - **Linux**: gcc
-- **Windows**: Visual Studio
+
+[comment]: <> (- **Windows**: Visual Studio)
 
 **Linux**:
-    ./build.sh
 
-**Windows**:
-    build.bat
+    sh build.sh
+
+[comment]: <> (**Windows**:
+    build.bat)
 
 ## Esecuzione
-    cd build
-    /milionario
+Il file da eseguire si trova nella cartella build/"_nome del sistema operativo_"/
