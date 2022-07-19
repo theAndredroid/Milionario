@@ -61,4 +61,5 @@ Paccheti neccessari:
 
 ## Esecuzione
 > cd build
+
 > ./milionario
