@@ -36,7 +36,7 @@ void asks_random(int *);
 void cinquantaecinquanta(int *);
 
 char box_domanda[10][63];
-int quantepossibilitahaiancoradiusareilcinquantaecinquanta=1;	//mezzo voto in più per la simpatia :)
+int half_option=1;
 
 // stuttura del main che fa scorrere i vari liveli
 void main(){
@@ -54,7 +54,7 @@ void main(){
 void welcome_screen(){
 	clear();
 	FILE *in;
-	in=fopen("benvenuto.txt", "r");
+	in=fopen("assets/messages/benvenuto.txt", "r");
 	for(int i=0; i<10; i++){
 		long int temp=ftell(in);
 		char ch;
@@ -86,7 +86,7 @@ void welcome_screen(){
 void win_screen(){
 	clear();
 	FILE *in;
-	in=fopen("vittoria.txt", "r");
+	in=fopen("assets/messages/vittoria.txt", "r");
 	for(int i=0; i<7; i++){
 		long int temp=ftell(in);
 		char ch;
@@ -122,7 +122,7 @@ void win_screen(){
 void lose_screen(){
 	clear();
 	FILE *in;
-	in=fopen("sconfitta.txt", "r");
+	in=fopen("assets/messages/sconfitta.txt", "r");
 	for(int i=0; i<5; i++){
 		long int temp=ftell(in);
 		char ch;
@@ -351,9 +351,9 @@ char accensione(int *asks_order, int mdimoney){
 	do{
 		fflush(stdin);
 		r=getch();
-		if (r==53 && quantepossibilitahaiancoradiusareilcinquantaecinquanta==1){
+		if (r==53 && half_option==1){
 			cinquantaecinquanta(asks_order);
-			quantepossibilitahaiancoradiusareilcinquantaecinquanta=0;
+			half_option=0;
 			return 5;
 		}
 		if(r==53){
@@ -683,48 +683,48 @@ FILE *ndomanda(int i, int *mdimoney){
 	switch(i){
 		case 1:
 			*mdimoney=0;
-			return fopen("1liv.txt", "r");
+			return fopen("assets/liv/1liv.txt", "r");
 		case 2:
 			*mdimoney=500;
-			return fopen("2liv.txt", "r");
+			return fopen("assets/liv/2liv.txt", "r");
 		case 3:
 			*mdimoney=1000;
-			return fopen("3liv.txt", "r");
+			return fopen("assets/liv/3liv.txt", "r");
 		case 4:
 			*mdimoney=1500;
-			return fopen("4liv.txt", "r");
+			return fopen("assets/liv/4liv.txt", "r");
 		case 5:
 			*mdimoney=2000;
-			return fopen("5liv.txt", "r");
+			return fopen("assets/liv/5liv.txt", "r");
 		case 6:
 			*mdimoney=3000;
-			return fopen("6liv.txt", "r");
+			return fopen("assets/liv/6liv.txt", "r");
 		case 7:
 			*mdimoney=5000;
-			return fopen("7liv.txt", "r");
+			return fopen("assets/liv/7liv.txt", "r");
 		case 8:
 			*mdimoney=7000;
-			return fopen("8liv.txt", "r");
+			return fopen("assets/liv/8liv.txt", "r");
 		case 9:
 			*mdimoney=10000;
-			return fopen("9liv.txt", "r");
+			return fopen("assets/liv/9liv.txt", "r");
 		case 10:
 			*mdimoney=15000;
-			return fopen("10liv.txt", "r");
+			return fopen("assets/liv/10liv.txt", "r");
 		case 11:
 			*mdimoney=20000;
-			return fopen("11liv.txt", "r");
+			return fopen("assets/liv/11liv.txt", "r");
 		case 12:
 			*mdimoney=30000;
-			return fopen("12liv.txt", "r");
+			return fopen("assets/liv/12liv.txt", "r");
 		case 13:
 			*mdimoney=70000;
-			return fopen("13liv.txt", "r");
+			return fopen("assets/liv/13liv.txt", "r");
 		case 14:
 			*mdimoney=150000;
-			return fopen("14liv.txt", "r");
+			return fopen("assets/liv/14liv.txt", "r");
 		case 15:
 			*mdimoney=300000;
-			return fopen("15liv.txt", "r");
+			return fopen("assets/liv/15liv.txt", "r");
 	}
 }
