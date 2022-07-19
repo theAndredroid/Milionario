@@ -54,12 +54,11 @@ Paccheti neccessari:
 - **Windows**: Visual Studio
 
 **Linux**:
-> ./build.sh
+    ./build.sh
 
 **Windows**:
-> build.bat
+    build.bat
 
 ## Esecuzione
-> cd build
-
-> ./milionario
+    cd build
+    /milionario
