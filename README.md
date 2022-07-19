@@ -58,3 +58,7 @@ Paccheti neccessari:
 
 **Windows**:
 > build.bat
+
+## Esecuzione
+> cd build
+> ./milionario
