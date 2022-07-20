@@ -451,7 +451,7 @@ void box_risposta_start(int r, int x){
 
 	// riadatamento della funzione sleep che ha bisogno del tempo espresso in millisecondi
 	void mysleep(int temp){
-		sleep(temp*1000);
+		Sleep(temp*1000);
 		return;
 	}
 	
