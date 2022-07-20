@@ -28,15 +28,15 @@ La prima riga di ogni file indica il numero di domande presenti nel file. Le rig
 
 Pacchetti necessari:
 - **Linux**: gcc
-
-[comment]: <> (- **Windows**: Visual Studio)
+- **Windows**: Visual Studio, Clang, Python
 
 **Linux**:
 
     sh build.sh
 
-[comment]: <> (**Windows**:
-    build.bat)
+**Windows**:
+
+    build.py
 
 ## Esecuzione
 Il file da eseguire si trova nella cartella build/"nome del sistema operativo"/
